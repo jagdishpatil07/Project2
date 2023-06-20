@@ -1,0 +1,161 @@
+echo "# Project2" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/jagdishpatil07/Project2.git
+git push -u origin main
+
+
+
+git remote add origin https://github.com/jagdishpatil07/Project2.git
+git branch -M main
+git push -u origin main
+
+
+
+
+
+
+Practical 1
+1:  IMRD@LAB3035 MINGW32 ~ (master)
+$ mkdir dj
+IMRD@LAB3035 MINGW32 ~ (master)
+$ cd dj
+
+IMRD@LAB3035 MINGW32 ~/dj (master)
+$ git init
+Initialized empty Git repository in C:/Users/IMRD/dj/.git/
+
+IMRD@LAB3035 MINGW32 ~/dj (master)
+$ git config --global user.name "Aachal"
+
+IMRD@LAB3035 MINGW32 ~/dj (master)
+$ git config --global user.name
+Aachal
+
+IMRD@LAB3035 MINGW32 ~/dj (master)
+$ git config --global user.email "aachaldhamani07@gmail.com"
+
+IMRD@LAB3035 MINGW32 ~/dj (master)
+$ git config --global user.email
+aachaldhamani07@gmail.com
+
+IMRD@LAB3035 MINGW32 ~/dj (master)
+$ git clone https://github.com/AachalDhamani/KBCNMU.git
+Cloning into 'KBCNMU'...
+warning: You appear to have cloned an empty repository.
+
+IMRD@LAB3035 MINGW32 ~/dj (master)
+$ ls
+KBCNMU/
+
+2:
+
+IMRD@LAB3035 MINGW32 ~/dj (master)
+$ touch hello.txt
+
+IMRD@LAB3035 MINGW32 ~/dj (master)
+$ git status
+On branch master
+No commits yet
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        KBCNMU/
+        hello.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+IMRD@LAB3035 MINGW32 ~/dj (master)
+$ git add hello.txt
+
+
+IMRD@LAB3035 MINGW32 ~/dj (master)
+$ git commit -m "hello"
+[master (root-commit) cfed96c] hello
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 hello.txt
+pc 2:-
+2:
+
+Administrator@LAB3012 MINGW32 ~/kbcnmu2 (master)
+$ git remote add origin https://github.com/Darshana055/kbcnmu2.git
+
+Administrator@LAB3012 MINGW32 ~/kbcnmu2 (master)
+$ git remote
+origin
+
+Administrator@LAB3012 MINGW32 ~/kbcnmu2 (master)
+$ git remote -v
+origin  https://github.com/Darshana055/kbcnmu2.git (fetch)
+origin  https://github.com/Darshana055/kbcnmu2.git (push)
+
+Administrator@LAB3012 MINGW32 ~/kbcnmu2 (master)
+$ git push origin master
+
+
+PC 5:-
+
+1:
+$ git log
+commit 824e120d6dc2c38fd2c249203635dae2c0845a2a (HEAD -> master)
+Author: Darshana <darshanaspatel05@gmail.com>
+Date:   Mon Jun 19 15:27:49 2023 +0530
+
+    msg
+
+Administrator@LAB3012 MINGW32 ~/kbcnmu2 (master)
+$ git log | less
+
+
+
+pc:6
+
+1:-
+
+  
+
+Administrator@LAB3012 MINGW32 ~/kbcnmu2 (master)
+$ git branch updated
+
+Administrator@LAB3012 MINGW32 ~/kbcnmu2 (master)
+$ git checkout updated
+Switched to branch 'updated'
+
+Administrator@LAB3012 MINGW32 ~/kbcnmu2 (updated)
+$ touch abcd
+
+Administrator@LAB3012 MINGW32 ~/kbcnmu2 (updated)
+$ git add abcd
+
+Administrator@LAB3012 MINGW32 ~/kbcnmu2 (updated)
+$ git commit -m "hiiiii"
+[updated 9320cae] hiiiii
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 abcd
+
+Administrator@LAB3012 MINGW32 ~/kbcnmu2 (updated)
+$ ls
+abc  abcd
+
+Administrator@LAB3012 MINGW32 ~/kbcnmu2 (updated)
+$ git checkout master
+Switched to branch 'master'
+
+Administrator@LAB3012 MINGW32 ~/kbcnmu2 (master)
+$ ls
+abc
+
+Administrator@LAB3012 MINGW32 ~/kbcnmu2 (master)
+$ git merge updated
+Updating 824e120..9320cae
+Fast-forward
+ abcd | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 abcd
+
+Administrator@LAB3012 MINGW32 ~/kbcnmu2 (master)
+$ ls
+abc  abcd
+
+
